@@ -7,6 +7,7 @@
 :root {
     --color-primary: #fd4766;
     --color-opacity-1: hsla(0, 0%, 100%, 0.2);
+    --color-gray: rgba(29, 29, 36, 0.75);
 }
 
 html {
@@ -16,6 +17,12 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
+}
+
+/* Common */
+
+a {
+    text-decoration: none;
 }
 
 /* !header */
@@ -165,4 +172,91 @@ body {
     height: 6px;
     border-radius: 50%;
     margin: 5px 10px;
+}
+
+/* !Services */
+
+.serviceCyber {
+    padding: 12rem 0;
+}
+.service__subtile {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 1.8rem;
+    font-size: 1.6rem;
+    border-radius: 0.4rem;
+    margin-bottom: 1.2rem;
+    background: linear-gradient(
+        120deg,
+        #1c99fe 20.69%,
+        #7644ff 50.19%,
+        var(--color-primary) 79.69%
+    );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.service__title {
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 6.2rem;
+    margin-bottom: 2rem;
+}
+
+.service__desc {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: var(--color-gray);
+}
+
+/* .service__link {
+    color: #000;
+} */
+
+.service__bottom {
+    margin-top: 3rem;
+    padding: 5rem;
+    background: #f6f6f6;
+}
+
+.service__bottom .icon i {
+    width: 4.7rem;
+    height: 4.7rem;
+    font-size: 4.5rem;
+    margin-bottom: 2.3rem;
+}
+
+.service__bottom .icon i:first-child {
+    color: var(--color-primary);
+}
+
+.service__bottom .icon i.icon--blue {
+    color: #337dff;
+}
+
+.service__bottom .icon i.icon--green {
+    color: #12d8df;
+}
+
+.service__bottom .icon i.icon--mossGreen {
+    color: #59c98d;
+}
+
+.service__bottom .icon i.icon--violet {
+    color: #6f41f6;
+}
+.service__content-title {
+    margin-bottom: 1.9rem;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #1f1f25;
+}
+
+.service__content-desc {
+    color: var(--color-gray);
+    font-size: 1.8rem;
+    line-height: 1.67;
 }
