@@ -90,11 +90,79 @@ body {
     display: block;
     color: #1f1f25;
     margin: 0 10px;
-    border-radius: 3px;
+    border-radius: 0.3rem;
     transition: all 0.8s;
 }
 
 .navCyber__item .dropdown-item:hover {
     color: var(--color-primary);
     background: #f1c7ce;
+}
+
+/* ! Slider */
+.slider {
+    position: relative;
+    top: 0;
+}
+
+.slider .carousel-caption {
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.carousel__title {
+    color: #ffffff;
+    font-size: 10rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+}
+
+.carousel__desc {
+    /* color: #c6c9d8; */
+    font-size: 2.4rem;
+    line-height: 4rem;
+    margin: 0;
+    padding: 0 16%;
+    font-weight: 300;
+}
+
+.slider-btn {
+    margin-top: 5rem;
+}
+
+.btn-default {
+    color: #fff;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1.6rem 4rem;
+    border-radius: 50rem;
+    display: inline-block;
+    font-weight: 500;
+    transition: all 0.4s ease-in-out;
+    background-size: 152% 100%;
+    background: var(--color-primary);
+    border: 2px solid var(--color-primary);
+}
+
+.btn-default:hover {
+    transition: all 0.4s ease-in-out;
+    background: transparent;
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+/* indicators__btn */
+/* .carousel-indicators {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+} */
+
+.carousel-indicators .indicators__btn {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 5px 10px;
 }
