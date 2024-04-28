@@ -396,3 +396,116 @@ a {
 .social__icon i {
     color: #757575;
 }
+
+/* ! Project */
+
+.projectCyber__img {
+    position: relative;
+    margin-top: 4rem;
+    z-index: 2;
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.65s cubic-bezier(0.05, 0.2, 0.1, 1),
+        box-shadow 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
+}
+
+.projectCyber__img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 55px rgba(253, 71, 102, 0.22);
+}
+
+.projectCyber__img::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    display: block;
+    z-index: 1;
+    content: "";
+    background: linear-gradient(
+        to bottom,
+        rgba(15, 15, 15, 0),
+        rgba(15, 15, 15, 0.75) 100%
+    );
+    transition: opacity 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
+    cursor: pointer;
+}
+
+.projectCyber__img::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    display: block;
+    z-index: 1;
+    content: "";
+    background: linear-gradient(
+        to bottom,
+        rgba(149, 22, 22, 0),
+        var(--color-primary) 100%
+    );
+    transition: opacity 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
+    cursor: pointer;
+    opacity: 0;
+}
+.thumbnail__link {
+    transition: all 0.4s ease-in-out 0s;
+}
+.thumbnail__img {
+    transition: transform 1s ease, opacity 0.5s ease 0.25s;
+    border-radius: 1rem;
+    width: 100%;
+    box-shadow: 0 25px 65px rgba(0, 0, 0, 0.1);
+}
+
+.projectCyber__img .content .inner {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding: 3rem 3rem;
+    z-index: 2;
+    width: 100%;
+    transform: translateX(-50%);
+}
+
+.projectCyber__img .content .inner .projectCyber__heading {
+    transition: opacity 0.65s cubic-bezier(0.05, 0.2, 0.1, 1),
+        transform 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
+}
+
+.category__list {
+    margin-bottom: 0.5rem;
+}
+
+.category__list .category__link {
+    color: #ffffff;
+    opacity: 0.7;
+    display: inline-block;
+    margin: 5px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.title .content__link {
+    color: #ffffff;
+    font-size: 3rem;
+}
+
+.projectCyber__hover {
+    opacity: 0;
+    position: absolute;
+    bottom: 3.5rem;
+    margin-top: 1rem;
+    transform: translateY(20px);
+    line-height: 1.5em;
+    max-width: 80%;
+    transition: opacity 0.18s cubic-bezier(0.05, 0.2, 0.1, 1),
+        transform 0.18s cubic-bezier(0.05, 0.2, 0.1, 1);
+    height: 62px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
