@@ -540,3 +540,17 @@ a {
 .view-more-btn {
     margin-top: 6rem;
 }
+
+/* !News */
+
+.newsCyber {
+    padding: 12rem 0;
+    background: #fff;
+}
+.mt--30 {
+    margin-top: 3rem;
+}
+
+.content .title .content-24 {
+    font-size: 2.4rem;
+}
