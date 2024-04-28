@@ -422,7 +422,10 @@ a {
 }
 
 /* ! Project */
-
+.projectCyber {
+    padding: 12rem 0;
+    background-image: url(../imgs/bg-image-3.jpg);
+}
 .projectCyber__img {
     position: relative;
     margin-top: 4rem;
@@ -532,4 +535,8 @@ a {
     height: 62px;
     text-overflow: ellipsis;
     overflow: hidden;
+}
+
+.view-more-btn {
+    margin-top: 6rem;
 }
