@@ -554,3 +554,72 @@ a {
 .content .title .content-24 {
     font-size: 2.4rem;
 }
+
+/* !about */
+
+.aboutCyber {
+    padding: 12rem 0;
+}
+.row--35 {
+    margin-left: -35px;
+    margin-right: -35px;
+}
+.about__img {
+    border-radius: 8px;
+    box-shadow: none;
+    width: 100%;
+}
+
+.tab-style--1 {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #e6e6e6;
+    border-radius: 50em;
+}
+
+button.active {
+    background-color: var(--color-primary);
+    color: #ffffff;
+    border: var(--color-primary);
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 99px;
+}
+
+.nav-item {
+    cursor: pointer;
+    padding: 10px 34px;
+    margin: -1px -2px -1px;
+    border-radius: 50em;
+    font-size: 0.88889em;
+    font-weight: 600;
+    transition: all 0.45s cubic-bezier(0, 0, 0.2, 1);
+    display: inline-block;
+    color: var(--color-gray);
+    border: 0 none;
+    transition: 0.3s;
+    max-width: initial;
+}
+
+.tab-content {
+    padding-top: 3rem;
+}
+
+.tab-content h4 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.tab-content li {
+    color: #7e7e7e;
+    font-size: 1.6rem;
+    line-height: inherit;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+}
+
+.tab-content i {
+    color: var(--color-primary);
+    margin-right: 5px;
+}
