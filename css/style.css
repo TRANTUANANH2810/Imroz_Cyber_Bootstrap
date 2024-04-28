@@ -366,9 +366,33 @@ a {
 
 .footerCyber__item a {
     color: #757575;
-    display: block;
-    font-size: 16px;
+    display: inline-block;
+    font-size: 1.6rem;
     padding: 5px 0;
+    position: relative;
+    /* width: 100%; */
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.footerCyber__item a:hover {
+    color: var(--color-primary);
+}
+.footerCyber__item a::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background: linear-gradient(
+        120deg,
+        #1c99fe 20.69%,
+        #7644ff 50.19%,
+        var(--color-primary) 79.69%
+    );
+}
+.footerCyber__item a:hover:after {
+    width: 100%;
 }
 
 .footer__social {
